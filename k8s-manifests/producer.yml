@@ -1,0 +1,9 @@
+#Define Service of type LoadBalancer with port:8080 and targetPort:9090
+apiVersion: v1
+
+---
+#Define Deployment using the image pushed to Docker Hub.
+#Get environment variables from secret and name it as `RABBITMQ_USERNAME` and `RABBITMQ_PASSWORD`
+#Use containerPort 9090
+
+apiVersion: apps/v1
